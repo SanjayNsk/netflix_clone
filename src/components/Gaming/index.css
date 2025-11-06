@@ -1,0 +1,119 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.gaming-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.gaming-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.light-section {
+  background-color: #ebebeb;
+}
+
+.dark-section {
+  background-color: #212121;
+}
+
+.page-heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.gaming-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.gaming-item {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.gaming-item:hover {
+  transform: scale(1.03);
+}
+
+.gaming-thumb {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.game-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.views {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Loader & Failure */
+.loader-container,
+.failure-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.failure-img {
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.retry-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.retry-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Theme text */
+.text-dark {
+  color: #1e293b;
+}
+
+.text-light {
+  color: #f1f5f9;
+}
+
+.light-theme {
+  background-color: #f9f9f9;
+  color: #1e293b;
+}
+
+.dark-theme {
+  background-color: #0f0f0f;
+  color: #f8fafc;
+}

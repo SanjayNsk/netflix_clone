@@ -1,0 +1,161 @@
+/* Container backgrounds */
+.app-container.light-bg {
+  background-color: #f9f9f9;
+}
+
+.app-container.dark-bg {
+  background-color: #0f0f0f;
+}
+
+/* Header text colors */
+.text-light {
+  color: #f1f1f1;
+}
+
+.text-dark {
+  color: #1e1e1e;
+}
+
+/* Saved videos content */
+.saved-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Header styling */
+.saved-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.saved-header-icon {
+  background-color: #e2e8f0; /* default light */
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.icon-dark {
+  background-color: #212121;
+}
+
+.saved-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Saved list items */
+.saved-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.saved-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.saved-item:hover {
+  transform: scale(1.02);
+}
+
+.item-dark {
+  background-color: #1e1e1e;
+}
+
+.item-light {
+  background-color: #ffffff;
+}
+
+/* Video thumbnail */
+.saved-thumb {
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Video details */
+.saved-details {
+  flex: 1;
+  padding: 10px 15px;
+}
+
+.saved-title {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.saved-channel,
+.saved-meta {
+  font-size: 14px;
+  margin: 2px 0;
+  color: inherit;
+}
+
+/* Saved link */
+.saved-link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+}
+
+/* No saved videos */
+.no-saved-wrapper {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.no-saved-img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.no-saved-heading {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.no-saved-desc {
+  font-size: 16px;
+}
+
+/* Unsave button */
+.unsave-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.unsave-btn-light {
+  background-color: #f1f1f1;
+  color: #1e1e1e;
+}
+
+.unsave-btn-light:hover {
+  background-color: #e2e8f0;
+}
+
+.unsave-btn-dark {
+  background-color: #333333;
+  color: #f1f1f1;
+}
+
+.unsave-btn-dark:hover {
+  background-color: #555555;
+}

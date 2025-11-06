@@ -1,0 +1,83 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  min-height: 100vh;
+  padding: 20px 16px;
+}
+
+.sidebar-light {
+  background-color: #f9f9f9;
+}
+
+.sidebar-dark {
+  background-color: #181818;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+}
+
+.active-item {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+.sidebar-icon {
+  flex-shrink: 0;
+}
+
+.sidebar-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.text-light {
+  color: #f9f9f9;
+}
+
+.text-dark {
+  color: #181818;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.contact-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.contact-desc {
+  font-size: 14px;
+  line-height: 1.4;
+}

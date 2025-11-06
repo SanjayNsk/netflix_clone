@@ -1,0 +1,133 @@
+/* ---------- Layout ---------- */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+.home-body {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* ---------- Theme ---------- */
+.home-light {
+  background-color: #f9f9f9;
+  color: #1e293b;
+}
+
+.home-dark {
+  background-color: #0f0f0f;
+  color: #f9fafb;
+}
+
+/* ---------- Search Section ---------- */
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 24px;
+  max-width: 500px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.input-light,
+.input-dark {
+  flex-grow: 1;
+  border: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-light {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+.input-dark {
+  background-color: #181818;
+  color: #f8fafc;
+}
+
+.search-box button {
+  background-color: #e2e8f0;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.home-dark .search-box button {
+  background-color: #383838;
+  color: #f8fafc;
+}
+
+/* ---------- Video Grid ---------- */
+.videos-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 24px;
+  margin: 0;
+}
+
+.video-item {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.video-item:hover {
+  transform: scale(1.02);
+}
+
+.thumb {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.text-dark {
+  color: #1e293b;
+}
+
+.text-light {
+  color: #f8fafc;
+}
+
+/* ---------- States ---------- */
+.loader-container,
+.failure-view,
+.no-results-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+}
+
+.failure-view img,
+.no-results-view img {
+  width: 250px;
+  margin-bottom: 16px;
+}
+
+.failure-view button,
+.no-results-view button {
+  background-color: #3b82f6;
+  border: none;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.failure-view button:hover,
+.no-results-view button:hover {
+  background-color: #2563eb;
+}
